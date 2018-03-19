@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		
+		<title>学生管理系统</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	
+	<body>
+		<!--描述：左边侧边栏 -->
+        <div class="nav">
+           <!--侧边栏上半部分-->
+			<div class="nav-head">
+				<!--头像-->
+				<img src="img/620x0.jpg" class="img-circle"/>
+				<!--用户名-->
+				<h3>临时用户</h3>
+			</div>
+
+           <!---侧边栏下半部分-手风琴选项组-->
+			<ul class="accordion nav-content">
+				<!--主页-->
+				<li class="accordion-group color-nav">
+					<div class="accordion-toggle nav-item"
+					data-toggle="collapse" href="#according-1">
+						<span class="fa fa-home"></span>
+						<span class="nav-name">主页</span>
+						<span class="fa fa-angle-right"></span>
+					</div>
+					<!--二级选项菜单-->
+					<ul id="according-1" class="collapsing nav-item-list">
+						<li class="nav-item color-nav" href="iframe/aboutUs.html">系统概览</li>
+					</ul>
+						
+				</li>
+				<!--基础管理-->
+				<li class="accordion-group color-nav">
+					<div class="accordion-toggle nav-item"
+					data-toggle="collapse" href="#according-2">
+						<span class="fa fa-navicon"></span>
+						<span class="nav-name">基础管理</span>
+						<span class="fa fa-angle-right"></span>
+					</div>
+					<ul id="according-2" class="collapsing  nav-item-list">
+						<li class="nav-item color-nav" href="iframe/studentsMansger.html">学生管理</li>
+					</ul>
+					
+				</li>
+				<!--系统管理-->	
+				<li class="accordion-group color-nav">
+					<div class="accordion-toggle nav-item"
+					data-toggle="collapse" href="#according-3">
+						<span class="fa fa-cog"></span>
+						<span class="nav-name"  href="i_test1.html">系统管理</span>
+						<span class="fa fa-angle-right"></span>
+					</div>
+					<ul id="according-3" class="collapsing nav-item-list">
+						<li class="nav-item color-nav" href="iframe/userManager.html">用户管理</li>
+					</ul>
+				</li>
+					
+			</ul>
+			
+		</div>
+		
+        <!--页面主体部分-->
+        <div class="page clearfix">
+        	<!--顶部菜单栏-->
+        	<div class="page-menu clearfix">
+        		<!--汉堡按钮-->
+        		<div class="fa fa-reorder " id="btn-menu"></div>
+	        	<!--菜单组-->
+	        	<ul class="page-menu-item clearfix">
+	        		<li id="menu-btn-blog"><span class="fa fa-feed"></span>博客</li>
+	        		<li id="menu-btn-message"><span class="fa fa-envelope-o"></span>通知</li>
+	        		<li id="menu-btn-contact"><span class="fa fa-qq"></span>联系我</li>	        		
+	        		<li id="menu-btn-theme"><span class="fa fa-exchange"></span>主题</li>
+	        	</ul>
+        	</div>
+        	
+        	<!--主题-->
+	        <div class="theme-box hidden">
+	        	<div class="theme-title"><span class="fa fa-cog"></span>设置</div>
+	        	<div class="theme-illustration">
+	        		<h2>主题设置</h2>
+ 					<p>你可以从这里选择和预览主题的布局和样式，这些设置会被保存在本地，下次打开的时候会直接应用这些设置。</p>
+	        	</div>
+	        	<ul class="theme-choose">
+	        		<li id="theme-choose-title">主题选择</li>
+ 					<li class="theme-choose-item color-MIZUASAGI">水浅葱</li>
+ 					<li class="theme-choose-item color-BYAKUROKU">白绿</li>
+ 					<li class="theme-choose-item color-TSUYUKUSA">露草</li>
+ 					<li class="theme-choose-item color-WASURENAGUSA">勿忘草</li>
+ 					<li class="theme-choose-item color-SHION">紫苑</li>
+ 					</ul>
+	        </div>
+        	
+        	<!--标签栏-->
+        	<div class="tabs clearfix">
+        		<!--向前滚动标签栏按钮-->
+        		<div id="btn-back" class="fa fa-backward tab-btn"></div>
+        		<!--标签组-->
+        		<div class="tabs-content">
+        			<ul class="tabs-box">
+        				<li class="tab-btn active" href="iframe/aboutUs.html" id="tab-index">首页</li>
+        			</ul>
+        		</div>
+        		
+        		<!--向后滚动标签栏按钮-->
+        		<div class="fa fa-forward tab-btn" id="tab-forward"></div>
+        		<!--关闭操作选项按钮/组-->
+        		<div class="tab-btn dropdown-group" id="tabs-crtl">
+        			<div class="dropdown-toggle" data-toggle="dropdown"
+        			aria-haspopup="true" aria-expanded="false">
+        				关闭操作 <span class="fa fa-angle-down"></span>
+        			</div>
+        			<ul class="dropdown-menu">
+        				<li id="drp-this">关闭当前选项卡</li>
+        				<li class="divider"></li>
+        				<li id="drp-all">关闭全部选项卡</li>
+        				<li id="drp-other">关闭其他选项卡</li>
+        			</ul>
+        		</div>
+        		<!--退出按钮-->
+        		<div class="tab-btn" id="tabs-break">
+        			<span class="fa fa-sign-out"></span>退出
+        		</div>
+        	</div>
+        	
+        	<!--iframe页面-->
+        	<iframe  src="iframe/aboutUs.html" class="iframe"></iframe>
+        	
+        		
+        	<!--页脚-->
+        	<div class="footer">
+        		ORO闲置共享平台-ORO(中国)工作室
+        	</div>
+        </div>
+        
+	</body>
+	<!--引入JS-->
+	<script src="js/lib/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

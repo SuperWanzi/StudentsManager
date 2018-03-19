@@ -1,0 +1,33 @@
+.search{
+	margin-top: 50px;
+	margin-left: -2px;
+}
+
+.forms-control{
+    width:800px !important;
+	
+}
+.btn-show{
+	margin-top: 50px;
+	margin-left: 15px;
+	
+}
+.btn-default{
+	width: 120px;
+}
+.btn{
+	padding: 10px 18px !important;
+
+}
+.dropdown-menu{
+	left:30px !important;
+	min-width: 120px !important;
+}
+
+#menu1{
+	border: 1px solid #AAAAAA;
+}
+
+#serch_input{
+	 border-radius: 10px;
+}

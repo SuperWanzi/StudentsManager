@@ -1,0 +1,282 @@
+/*默认样式*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+/*清除浮动*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+  overflow: hidden;
+}
+/*左边导航栏样式*/
+.color-nav{
+	color: #a7b1c2;
+}
+.nav{
+	width: 220px;
+	overflow: hidden;
+	height: 100%;	
+	float: left;
+}
+.nav-head{
+	background: #233646;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+/* 头像*/
+.nav-head>img{
+	width: 80px;
+	height: 80px;
+}
+/*用户名*/
+.nav-head>h3{
+	color: #eee;
+	font-size: 14px;
+	font-weight: 600;
+}
+.nav-content{
+	background: #2f4050;
+	height: calc(100% - 150px);
+	height: -moz-calc(100% - 150px);
+	height: -webkit-calc(100% - 150px);
+}
+
+.nav-item{
+	padding-left: 20px;
+	line-height: 45px;
+	font-size: 13px;
+	font-weight: 600;
+	height: 45px;
+	cursor: pointer;
+}
+.nav-item:hover{
+	background-color: #293846
+}
+.nav-item .fa{
+	width: 30px;
+	text-align: center;
+}
+.nav-item .nav-name{
+	display: inline-block;
+	width: 100px;
+	
+}
+.nav-item .fa-angle-right{
+	text-align: right;
+}
+
+.nav-item-list{
+	list-style: none;
+	padding-left: 20px;
+	background-color: #293846
+}
+.nav-item-list li:hover{
+	color: white;
+}
+/*右边页面主体部分*/
+.page{
+	float: left;
+	width: calc(100% - 220px);
+	width: -webkit-calc(100% - 220px);
+	height: 100%;
+	margin-left: 220x;
+
+}
+.page-menu{
+	background: #f3f3f4;
+	height: 60px;
+	line-height: 60px;
+}
+/*汉堡按钮*/
+#btn-menu{
+	
+	float: left;
+	width: 38px;
+	height: 30px;
+	background: #1ab394;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 15px;
+	margin-left: 20px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.page-menu-item{
+	float: right;
+	list-style: none;
+	width: 320px;
+	text-align: center;
+	
+}
+.page-menu-item>li{
+	width: 80px;
+	font-size: 14px;
+	color: #999c9e;
+	float: left;
+	cursor: pointer;
+}
+.page-menu-item>li:hover{
+	background-color: #eee;
+}
+.page-menu-item>li>span{
+	margin-right: 5px;
+}
+/*主题功能模块*/
+.theme-box{
+	height: calc(100% - 60px);
+	width: 260px;
+	position: absolute;
+	right: 0;
+	border-left: 1px #ddd solid;
+	background: #FAFAFA;
+	overflow: auto;
+}
+.theme-box>div>span{
+	margin-right: 5px;
+}
+.theme-title{
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #293846;
+	color: #fff;
+}
+.theme-illustration{
+	padding: 20px;
+}
+.theme-illustration>h2{
+	font-size: 16px;
+	font-weight: 600;
+	
+}
+.theme-choose{
+	list-style: none;
+}
+.theme-choose>li{
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+}
+#theme-choose-title{
+	height: 40px;
+	background: #eee;
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	color: #000;
+	cursor: default;
+}
+/*主题颜色*/
+/*水浅葱*/
+.color-MIZUASAGI{
+	background-color: #66BAB7;
+}
+.color-BYAKUROKU{
+	background-color: #A8D8B9;
+}
+.color-TSUYUKUSA{
+	background-color: #2EA9DF;
+}
+.color-WASURENAGUSA{
+	background-color: #7DB9DE;
+}
+.color-SHION{
+	background-color: #8F77B5;
+}
+/*选项卡栏目*/
+.tabs{
+	height: 45px;
+	width: 100%;
+	background: #FAFAFA;
+	color: #777;
+	border-top: 1px #eee solid;
+	border-bottom: 2px #2F4050 solid;
+}
+
+.tabs>.tabs-content{
+	float: left;
+	list-style: none;
+	text-align: center; 
+	width: calc(100% - 260px);
+	overflow: hidden;
+}
+
+.tabs-box>.active{
+	background: #2f4050;
+	color: #a7b1c2;
+}
+/*标签组首页位置*/
+#tab-index{
+	margin-left: 0;
+}
+.tab-btn{
+	float: left;
+	overflow: hidden;
+	height: 42px;
+	font-size: 13px;
+	border-right: 1px #eee solid;
+	padding: 0 15px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.tab-btn>span{
+	padding: 2px;
+	text-align: center;
+	margin-left: 2px;
+	background: #f3f3f4;
+	border-radius: 15px;
+}
+.tab-btn>span:hover{
+	background: red;
+	color: white;
+}
+.dropdown-menu{
+	position: absolute;
+	top:105px;
+}
+
+.dropdown-menu>li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.iframe{
+	width: 100%;
+	border: none;
+	height: calc(100% - 60px - 45px - 35px);
+
+}
+/*页脚*/
+.footer{
+	width: 100%;
+	height: 35px;
+	border-top: 1px #ccc solid;
+	background: #FAFAFA;
+	font-size: 12px;
+	text-align: right;
+	line-height: 35px;
+	color: #a0a0a0;
+}

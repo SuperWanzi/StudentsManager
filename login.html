@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学生管理系统登录</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<!--登录框-->
+		<div id="login-box">
+			<!--登录框上半部分-标题框-->
+			<div class="title">
+				<h1>学生管理系统登录</h1>
+				<h2>Student Management System</h2>
+			</div>
+			<!--上半部分遮罩-->
+			<div class="mask m-title"></div>
+			<!--下半部分遮罩-->
+			<div class="mask m-content"></div>
+			
+			<div class="login-content  clearfix">			
+				<!--登录表单-->
+				<form action="#" class="form-login" method="post">
+					<!--用户名-->
+					<div class="input-box">
+						<span class="fa fa-user"></span>
+						<input type="text" name="uid" class="input-text" placeholder="管理员帐号" />
+					</div>
+					<!--密码-->
+					<div class="input-box">
+						<span class="fa fa-lock"></span>
+						<input type="password" name="pwd" class="input-text" placeholder="密码"/>
+					</div>
+					<!--验证码-->
+					<div class="input-box">
+						<span class="fa fa-key"></span>
+						<input type="text" name="code" class="input-text input_code"  placeholder="验证码"/>
+						<img id="captcha" src=""/>
+					</div>
+					<!--登录按钮组-->
+					<div class="button-group">
+						<input type="submit" class="btn btn-left" value="登录"/>
+						<input type="button" class="btn" value="重置"/>
+					</div>
+						
+				</form>				
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/lib/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/captcha.js" type="text/javascript" charset="utf-8"></script>
+</html>
